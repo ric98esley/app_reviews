@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:prueba_2/header_appbar.dart';
 import 'description_place.dart';
-import 'gradient_back.dart';
 import 'review_list.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light));
   runApp(const MyApp());
 }
 
@@ -14,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'App de viajes',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
                   "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Praesent ut ligula non mi varius sagittis. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo."),
               ReviewList()
             ]),
-            GradienteBack("Popular")
+            HeaderAppbar()
           ],
         )));
   }
