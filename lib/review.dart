@@ -17,7 +17,7 @@ class Review extends StatelessWidget {
           softWrap: true,
           textAlign: TextAlign.left,
           style: const TextStyle(
-              fontFamily: "Lato", fontSize: 17.0, fontWeight: FontWeight.w900),
+              fontFamily: "Lato", fontSize: 15.0, fontWeight: FontWeight.w900),
         ));
 
     final userInfo = Container(
