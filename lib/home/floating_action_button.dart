@@ -8,7 +8,7 @@ class FloatingActionButtonGreen extends StatefulWidget {
 }
 
 class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
-  var iconFav = Icons.favorite;
+  dynamic iconFav = Icons.favorite;
 
   void onPressedFav() {
     ScaffoldMessenger.of(context)
