@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'home_trips.dart';
 import 'search_trip.dart';
-import 'porfile_trips.dart';
+import 'profile_trips.dart';
 
 class AppTripsCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
-          backgroundColor: Colors.white.withAlpha(70),
+          backgroundColor: Colors.transparent,
           tabBar: CupertinoTabBar(
               backgroundColor: Colors.white.withAlpha(70),
               activeColor: Colors.indigo,
@@ -32,7 +32,7 @@ class AppTripsCupertino extends StatelessWidget {
                 );
               case 2:
                 return CupertinoTabView(
-                  builder: (BuildContext context) => PorfileTrips(),
+                  builder: (BuildContext context) => ProfileTrips(),
                 );
               default:
                 return CupertinoTabView(

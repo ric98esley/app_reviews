@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PorfileTrips extends StatelessWidget {
+class ProfileTrips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

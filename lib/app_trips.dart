@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home_trips.dart';
 import 'search_trip.dart';
-import 'porfile_trips.dart';
+import 'profile_trips.dart';
 
 class AppTrips extends StatefulWidget {
   @override
@@ -15,7 +15,7 @@ class _AppTrips extends State<AppTrips> {
   final List<Widget> widgetsChildren = [
     HomeTrips(),
     SearchTrip(),
-    PorfileTrips(),
+    ProfileTrips(),
   ];
   void onTapTapped(int index) {
     setState(() {
