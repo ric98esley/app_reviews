@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prueba_2/profile/header_app_bar/menu_bar_bottons.dart';
 import 'package:prueba_2/profile/header_app_bar/user_info.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -25,7 +26,8 @@ class ProfileHeader extends StatelessWidget {
             Row(
               children: [titleProfile],
             ),
-            UserInfo("assets/img/perfil.jpg", "Gustavo Pedro")
+            UserInfo("assets/img/perfil.jpg", "Gustavo Pedro"),
+            MenuBottonsBar()
           ],
         ));
   }
